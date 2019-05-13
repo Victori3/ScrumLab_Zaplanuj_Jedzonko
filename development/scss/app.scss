@@ -1,0 +1,115 @@
+
+@import "../fonts/scss/fontawesome";
+@import "../fonts/scss/solid";
+
+//reset
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+//layout
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+.header{
+    .logo{
+        color: #4a4a49;
+        font-family: 'Charmonman', cursive;
+        margin: 20px;
+        font-weight: 400;
+        font-size: 24px;
+    }
+    width: 100vw;
+    height: 80px;
+    background: #4a4a49;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    >.user-info{
+        display: flex;
+        width: 100px;
+        align-items: center;
+        margin-right: 80px;
+        >.user_name{
+            margin-right: 20px;
+            color: #FFFFFA;
+            
+        }
+        >.far{
+            color: #E58A20;
+            font-size: 40px;
+        }
+    }
+}
+.hero{
+    display: flex;
+
+    >.nav{
+        font-size: 20px;
+        font-weight: 400;
+        width: 234px;
+        background: #5B605F;
+        height: 100vh;
+    }
+    .nav_view{
+        padding: 25px 25px;
+        // position: relative;
+        >a{
+            text-decoration: none;
+            color: #FFFFFA;
+            position: relative;
+            &:hover{
+                &::after{
+                    @extend %fa-icon;
+                    @extend .fas;
+                    content: fa-content($fa-var-chevron-right);
+                    position: absolute;
+                    left: 150px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #E58A20;
+                }
+            }
+        }
+        
+    }
+
+    //todo add this line to js
+    .nav_home{
+        border-left: 5px solid #E58A20;
+    }
+
+    >.content{
+        background: url('../images/image.png');
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
