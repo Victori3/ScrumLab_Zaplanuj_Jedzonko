@@ -31,6 +31,7 @@ header {
     color: #4a4a49;
     font-family: 'Charmonman', cursive;
     width: 25%;
+    margin-left: -50px;
   }
 
   .menu {
@@ -199,19 +200,16 @@ header {
   h3 {
     font-size: 24px;
     color: white;
-
   }
 
   .glue {
     display: flex;
     height: 45px;
-
   }
 
   input {
     padding: 0 10px;
     width: 350px;
-
   }
 
   button {
@@ -221,4 +219,39 @@ header {
     background-color: #FF6600;
     width: 165px;
   }
+
+}
+
+.cta {
+  background: #4a4a49;
+  color: #FFFFFA;
+
+  .container {
+    height: 250px;
+
+    .cta_left {
+      width: 66%;
+      font-size: 24px;
+
+      .left__header {
+        font-size: 1.5em;
+        font-weight: 400;
+      }
+
+      .left__text {
+        font-weight: 400;
+      }
+    }
+
+    .cta_right {
+      .cta__btn {
+        background: #FF6600;
+        text-decoration: none;
+        font-size: 20px;
+        color: #FFFFFA;
+        padding: 12px 30px;
+      }
+    }
+  }
+
 }
