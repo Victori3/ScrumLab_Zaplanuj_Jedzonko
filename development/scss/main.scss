@@ -5,6 +5,43 @@
 // https://fontawesome.com/how-to-use/on-the-web/using-with/sass
 
 
-body{
+body {
   background-color: #BADA55;
+}
+
+
+.up {
+  .karuzela {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 1430px;
+    height: 500px;
+    // flex-basis: 80%;
+    background-color: white;
+    margin: 44px auto;
+
+    p {
+      width: 700px;
+      text-align: center;
+      line-height: 45px;
+      font-size: 40px;
+      margin: 0 auto;
+    }
+
+    i {
+      font-size: 40px;
+      position: absolute;
+    }
+
+    &>i:first-child {
+      left: 14px;
+    }
+
+    &>i:last-child {
+      right: 14px;
+    }
+
+  }
 }
