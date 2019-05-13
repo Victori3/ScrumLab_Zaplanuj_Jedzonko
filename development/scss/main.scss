@@ -187,3 +187,38 @@ header {
     }
   }
 }
+
+.newsletter {
+  background-color: #4A4A49;
+  padding: 10px 0;
+
+  .container {
+    height: 150px;
+  }
+
+  h3 {
+    font-size: 24px;
+    color: white;
+
+  }
+
+  .glue {
+    display: flex;
+    height: 45px;
+
+  }
+
+  input {
+    padding: 0 10px;
+    width: 350px;
+
+  }
+
+  button {
+    font-size: 24px;
+    //padding: 10px 0;
+    color: white;
+    background-color: #FF6600;
+    width: 165px;
+  }
+}
