@@ -32,7 +32,7 @@ body{
             
         }
         >.far{
-            color: #E58A20;
+            color: #F60;
             font-size: 40px;
         }
     }
@@ -45,7 +45,7 @@ body{
         font-weight: 400;
         width: 234px;
         background: #5B605F;
-        height: 100vh;
+        height: calc(100vh - 80px);
     }
     .nav_view{
         padding: 25px 25px;
@@ -60,10 +60,11 @@ body{
                     @extend .fas;
                     content: fa-content($fa-var-chevron-right);
                     position: absolute;
-                    left: 150px;
+                    left: 160px;
                     top: 50%;
                     transform: translateY(-50%);
-                    color: #E58A20;
+                    color: #F60;
+                    font-size: 18px;
                 }
             }
         }
@@ -72,14 +73,63 @@ body{
 
     //left border for current subpage
     .nav_home{
-        border-left: 5px solid #E58A20;
+        border-left: 5px solid #F60;
         padding-left: 20px;
     }
 
     >.content{
         background: url('../images/image.png');
-        width: 100vw;
-        height: 100vh;
+        width: calc(100vw - 80px);
+        height: calc(100vh - 80px);
+    }
+}
+
+// Content //
+
+.content{
+    .message{
+        background: #FFFFFA;
+        border: 1px dashed darkgray;
+        margin: 35px 80px;
+        width: 1070px;
+        height: 630px;
+        text-align: center;
+        font-size: 24px;
+        color: #5B605F;
+        font-weight: 600;
+        .message_header{
+            margin-top: 70px;
+            font-size: 36px;
+        }
+        .message_text{
+            margin: 10px;
+        }
+        .message_form{
+            
+            .form__input{
+                width: 280px;
+                height: 30px;
+                padding: 0 10px;
+                margin: 10px;
+                font-size: 1rem;
+            }
+            .form__btn{
+                font-size: 24px;
+                color: #FFFFFA;
+                background-color: #F60;
+                width: 126px;
+                height: 38px;
+                font-size: 20px;
+                padding: 6px 10px;
+                border: none;
+                margin: 10px;
+            }
+        }
+        .message_tip{
+            font-size: 20px;
+            margin: 10px;
+            font-weight: 600;
+        }
     }
 }
 
