@@ -4,7 +4,143 @@
 // Sass:
 // https://fontawesome.com/how-to-use/on-the-web/using-with/sass
 
+//Header
 
-body{
+body {
   background-color: #BADA55;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+header {
+  background: #4a4a49;
+  justify-content: space-around;
+
+  .header {
+    display: flex;
+  }
+
+  .logo {
+    color: #4a4a49;
+    font-family: 'Charmonman', cursive;
+    width: 25%;
+    padding: 0 70px;
+  }
+
+  .menu {
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+
+    a {
+      text-decoration: none;
+      margin: 20px;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      justify-content: space-around;
+
+      &:hover {
+        color: #E58A20;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+//Features
+.features {
+  background-color: #EBEBEB;
+
+  .box {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    justify-content: space-around;
+    color: #4a4a49;
+  }
+
+  .feature {
+    margin: 30px;
+    text-align: center;
+  }
+
+  i {
+    font-size: 3rem;
+    color: #A1A194;
+  }
+}
+
+
+//About me
+.about-me {
+  background-color: #EBEBEB;
+
+  .about {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    justify-content: space-between;
+    color: black;
+  }
+
+  .pic {
+    width: 300px;
+    height: 300px;
+    background: #4a4a49;
+    margin: 5% 0;
+    box-sizing: border-box;
+  }
+
+  .text {
+    // text-align: center;
+    align-items: center;
+    width: 60%;
+    font-family: 'Open Sans', sans-serif;
+    padding: 50px auto;
+    margin: 50px auto;
+  }
+}
+
+.up {
+  .karuzela {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 1430px;
+    height: 500px;
+    // flex-basis: 80%;
+    background-color: white;
+    margin: 44px auto;
+
+    p {
+      width: 700px;
+      text-align: center;
+      line-height: 45px;
+      font-size: 40px;
+      margin: 0 auto;
+    }
+
+    i {
+      font-size: 40px;
+      position: absolute;
+    }
+
+    &>i:first-child {
+      left: 14px;
+    }
+
+    &>i:last-child {
+      right: 14px;
+    }
+
+  }
 }
