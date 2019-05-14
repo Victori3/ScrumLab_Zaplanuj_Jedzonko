@@ -2,6 +2,7 @@
 
 //Header
 
+
 body {
   background-color: #BADA55;
   box-sizing: border-box;
@@ -58,7 +59,7 @@ header {
 .features {
   background-color: #EBEBEB;
 
-  .container {
+  >.container {
     height: 622px;
     color: #4a4a49;
   }
@@ -130,6 +131,63 @@ header {
 
 }
 
+.stopka {
+
+  background: grey;
+  font-size: 20px;
+
+  .box {
+    height: 300px;
+  }
+
+
+  >.container {
+    background: grey;
+    color: white;
+    padding-top: 50px;
+
+    .box_1 {
+
+      width: 300px;
+
+    }
+
+    .box_2 {
+      ul>li {
+
+        margin-left: -20px
+      }
+    }
+
+    .box_3 {
+
+      form {
+        display: flex;
+
+
+        input {
+          width: 200px;
+          font-size: 25px;
+        }
+
+        button {
+          background-color: darkorange;
+          font-size: 20px;
+          align-self: center;
+          border: none;
+          flex-direction: column;
+          padding: 5px;
+        }
+      }
+
+      i {
+        font-size: 35px;
+        color: white;
+        margin: 30px 30px 0 0;
+      }
+    }
+  }
+}
 
 .newsletter {
   background-color: #4A4A49;
