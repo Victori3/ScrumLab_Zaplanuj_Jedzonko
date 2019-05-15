@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zaplanuj Jedzonko</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=latin-ext"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/app.css" />
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo"><span style="color:white;">Zaplanuj </span><span style="color:#F60">Jedzonko</span> </h1>
+        <div class="user-info">
+            <p class="user_name">Imię</p>
+            <i class="far fa-user-circle"></i>
+        </div>
+    </header>
+    <div class="hero">
+        <nav class="nav">
+            <div class="nav_home nav_view">
+                <a href="app.html">Pulpit</a>
+            </div>
+            <div class="nav_recipes nav_view">
+                <a href="recipes.html">Przepisy</a>
+            </div>
+            <div class="nav_schedules nav_view">
+                <a href="schedules.html">Plany</a>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="kontener">
+                <div class="first_line">
+                    <p>nowy przepis</p>
+                    <button class="save">Zapisz i zamknij</button>
+                </div>
+                <section class="second_line">
+                    <form action="" class="forma">
+                        <p>Nazwa Przepisu</p>
+                        <input type="text" class="text_form storage_form"
+                            placeholder="Zapiekanka z ziemniakami i brukselką">
+                        <p>Opis Przepisu</p>
+                        <input type="text" class="text_form storage_form_2"
+                            placeholder="Mamusina najlepsza zapiekanka pod słońcem. Można ją podać jako główne danie albo jako kolację. W zapiekance możesz użyć również kiełbasy paprykowej sprawi ona, że zapiekanka będzie ostrzejsza w smaku. Zgodnie z zalecanimi Makłowicza, podawać z dobrze dobranym winkiem ;)">
+                    </form>
+                </section>
+                <section class="gemini">
+                    <div class="side">
+                        <div class="oplot">
+                            <p>Instrukcje</p>
+                        </div>
+                        <div action="" class="foremka">
+                            <input type="text" class="first">
+                            <button class="fas fa-plus-square square1">
+                                <!-- <i class="fas fa-plus-square square1"></i> -->
+                            </button>
+                        </div>
+                        <div class="size">
+                            <ol class="rectangle_1">
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="side">
+                        <div class="oplot">
+                            <p>Składniki</p>
+                        </div>
+                        <div class="foremka">
+                            <input type="text" class="second">
+                            <button class="fas fa-plus-square square2">
+                                <!-- <i class="fas fa-plus-square square2"></i> -->
+                            </button>
+                        </div>
+                        <div class="size ">
+                            <ul class="rectangle_2">
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="../js/add_recipe.js"></script>
+</body>
+
+</html>

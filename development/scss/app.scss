@@ -27,7 +27,7 @@ body {
         display: flex;
         width: 100px;
         align-items: center;
-        margin-right: 80px;
+        margin-right: 120px;
 
         >.user_name {
             margin-right: 20px;
@@ -144,4 +144,142 @@ body {
             font-weight: 600;
         }
     }
+}
+
+
+
+// Add. recipe. Style
+
+
+.kontener {
+    width: 1069px;
+    height: 629px;
+    // border: 1px dashed black;
+
+    .first_line {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        align-items: center;
+        margin: 25px auto 0;
+        border-bottom: 1px solid black;
+        width: 994px;
+
+
+
+        p {
+            font-size: 24px;
+            color: darkorange;
+            padding-top: 10px;
+        }
+
+        >button {
+            font-size: 16px;
+            background-color: darkorange;
+            color: white;
+            padding: 15px;
+            height: 50px;
+        }
+    }
+
+    .second_line {
+        text-transform: uppercase;
+        // margin: 25px auto 0;
+        width: 90%;
+        margin: 10px 40px;
+
+        .forma {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            flex-flow: row;
+            flex-wrap: wrap;
+
+            p {
+                font-size: 24px;
+            }
+
+            .text_form {
+                display: inline-block;
+                flex-basis: 70%;
+                height: 3vh;
+                margin-bottom: 10px;
+            }
+
+            .text_form:nth-of-type(2) {
+                height: 5vh;
+            }
+        }
+    }
+
+    .gemini {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 40px;
+
+        .oplot {
+            width: 470px;
+            border-bottom: 1px solid black;
+
+            p {
+                font-size: 24px;
+
+            }
+        }
+
+        .foremka {
+            display: flex;
+            flex-direction: row;
+
+
+            input {
+                margin-top: 10px;
+                flex-basis: 90%;
+                height: 7vh;
+            }
+
+            .second {
+                font-size: 15px;
+                height: 4vh;
+            }
+
+            .square1,
+            .square2 {
+                border: none;
+                font-size: 30px;
+                color: rgb(70, 137, 102);
+                margin: 9px 0 0 5px;
+
+
+            }
+        }
+
+        .side {
+            word-wrap: break-word;
+
+            ol {
+                margin-top: 40px;
+
+                li {
+                    line-height: 24px;
+                }
+            }
+
+            ul {
+                margin-top: 70px;
+
+                li {
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+.size {
+    height: 200px;
+    max-width: 470px;
+    margin-left: 10px;
+    // overflow: scroll;
 }
