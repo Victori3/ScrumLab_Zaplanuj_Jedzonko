@@ -25,7 +25,7 @@ body{
         display: flex;
         width: 100px;
         align-items: center;
-        margin-right: 80px;
+        margin-right: 120px;
         >.user_name{
             margin-right: 20px;
             color: #FFFFFA;
@@ -88,6 +88,7 @@ body{
 
 .content{
     .message{
+        // display: none;
         background: #FFFFFA;
         border: 1px dashed darkgray;
         margin: 35px 80px;
