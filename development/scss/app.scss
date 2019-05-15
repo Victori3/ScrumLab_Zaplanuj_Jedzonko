@@ -2,18 +2,19 @@
 @import "../fonts/scss/fontawesome";
 @import "../fonts/scss/solid";
 
-body{    
+body {
     font-weight: 400;
 }
 
-.header{
-    .logo{
+.header {
+    .logo {
         color: #4a4a49;
         font-family: 'Charmonman', cursive;
         padding: 25px;
         font-weight: 400;
         font-size: 24px;
     }
+
     width: 100vw;
     height: 80px;
     background: #4a4a49;
@@ -21,41 +22,48 @@ body{
     justify-content: space-between;
     align-items: center;
     font-size: 24px;
-    >.user-info{
+
+    >.user-info {
         display: flex;
         width: 100px;
         align-items: center;
         margin-right: 80px;
-        >.user_name{
+
+        >.user_name {
             margin-right: 20px;
             color: #FFFFFA;
-            
+
         }
-        >.far{
+
+        >.far {
             color: #F60;
             font-size: 40px;
         }
     }
 }
-.hero{
+
+.hero {
     display: flex;
 
-    >.nav{
+    >.nav {
         font-size: 20px;
         font-weight: 400;
         width: 234px;
         background: #5B605F;
         height: calc(100vh - 80px);
     }
-    .nav_view{
+
+    .nav_view {
         padding: 25px 25px;
+
         // position: relative;
-        >a{
+        >a {
             text-decoration: none;
             color: #FFFFFA;
             position: relative;
-            &:hover{
-                &::after{
+
+            &:hover {
+                &::after {
                     @extend %fa-icon;
                     @extend .fas;
                     content: fa-content($fa-var-chevron-right);
@@ -68,16 +76,16 @@ body{
                 }
             }
         }
-        
+
     }
 
     //left border for current subpage
-    .nav_home{
+    .nav_home {
         border-left: 5px solid #F60;
         padding-left: 20px;
     }
 
-    >.content{
+    >.content {
         background: url('../images/image.png');
         width: calc(100vw - 80px);
         height: calc(100vh - 80px);
@@ -86,8 +94,8 @@ body{
 
 // Content //
 
-.content{
-    .message{
+.content {
+    .message {
         background: #FFFFFA;
         border: 1px dashed darkgray;
         margin: 35px 80px;
@@ -97,23 +105,27 @@ body{
         font-size: 24px;
         color: #5B605F;
         font-weight: 600;
-        .message_header{
+
+        .message_header {
             margin-top: 70px;
             font-size: 36px;
         }
-        .message_text{
+
+        .message_text {
             margin: 10px;
         }
-        .message_form{
-            
-            .form__input{
+
+        .message_form {
+
+            .form__input {
                 width: 280px;
                 height: 30px;
                 padding: 0 10px;
                 margin: 10px;
                 font-size: 1rem;
             }
-            .form__btn{
+
+            .form__btn {
                 font-size: 24px;
                 color: #FFFFFA;
                 background-color: #F60;
@@ -125,11 +137,11 @@ body{
                 margin: 10px;
             }
         }
-        .message_tip{
+
+        .message_tip {
             font-size: 20px;
             margin: 10px;
             font-weight: 600;
         }
     }
 }
-
