@@ -21,123 +21,137 @@
         <a href="app.html" class="menu-links" style="color:#E58A20">Zaplanuj posiłki!</a>
         <a href="#features" class="menu-links">Dlaczego warto?</a>
         <a href="#about" class="menu-links">O mnie</a>
-        <a href="#" class="menu-links">Kontakt</a>
+        <a href="#stopka" class="menu-links">Kontakt</a>
       </nav>
     </div>
   </header>
-  <section>
-    <section class="karuzela">
-      <!-- carousel -->
-      <i class="fas fa-chevron-left"></i>
-      <div class="container">
-        <div class="karuzela_box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae
-          eos repellat molestias consectetur elit?</div>
-      </div>
-      <i class="fas fa-chevron-right"></i>
-      </div>
-    </section>
-    <section class="cta">
-      <!-- CTA + button -->
-      <div class="container">
-        <div class="cta_left">
-          <h3 class="left__header">Lorem ipsum dolor sit amet.</h3>
-          <p class="left__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis ratione iste
-            incidunt, sapiente voluptatem rem?</p>
-        </div>
-        <div class="cta_right">
-          <a href="app.html" class="cta__btn">Lorem ipsum</a>
-        </div>
-      </div>
-    </section>
-    <!-- features -->
-    <section id="features">
-      <div class="container">
-        <div class="feature">
-          <i class="fas fa-check"></i>
-          <h1>Lorem ipsum dolor sit amet</h1>
-          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate consequat quam, in auctor
-            sapien. Vestibulum sodales imperdiet ex, nec auctor enim porttitor nec. Pellentesque sed malesuada magna.
-          </div>
-        </div>
-        <div class="feature">
-          <i class="far fa-clock"></i>
-          <h1>Lorem ipsum dolor sit amet</h1>
-          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate consequat quam, in auctor
-            sapien. Vestibulum sodales imperdiet ex, nec auctor enim porttitor nec. Pellentesque sed malesuada magna.
-          </div>
-        </div>
-        <div class="feature">
-          <i class="fas fa-bars"></i>
-          <h1>Lorem ipsum dolor sit amet</h1>
-          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate consequat quam, in auctor
-            sapien. Vestibulum sodales imperdiet ex, nec auctor enim porttitor nec. Pellentesque sed malesuada magna.
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- newsletter -->
-    <section class="newsletter">
-      <div class="container">
-        <div>
-          <h3>Lorem ipsum dolor sit amet</h3>
-        </div>
-        <div class="glue">
-          <input>
-          <button>Lorem</button>
-        </div>
-      </div>
-    </section>
-    <section class="container about-me">
-      <!-- about me -->
-      <div id="about">
-        <div class="pic"></div>
-        <div class="text">
-          <h3>Lorem ipsum dolor sit amet</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat.
-            Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus
-            arcu
-            condimentum sed.
-            <p>
-        </div>
-      </div>
-    </section>
-    <!-- footer -->
-    <section class="stopka">
-      <div class="container">
-        <div class="box_1 box">
-          <h2> Lorem ipsum dolor</h2>
-          <p>
-            Lorem ipsum dolor
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit amet.
-          </p>
-        </div>
-        <div class="box_2 box">
-          <h2>Lerem ipsum dolor</h2>
-          <ul>
-            <li>consectetur adipiscing elit</li>
-            <li>sed do eiusmod tempor</li>
-            <li>incididunt ut labore</li>
-            <li>et dolore magna aliqua</li>
-          </ul>
-        </div>
-        <div class="box_3 box">
-          <h2>Lerem ipsum dolor</h2>
-          <form action="">
-            <input type="text">
-            <button>Lorem</button>
-          </form>
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-twitter-square"></i>
-          <i class="fab fa-instagram"></i>
-        </div>
-      </div>
-    </section class="container">
-    <footer class="footer ">
-      <p>Copyright <span>ZaplanujJedzonko.pl</span></p>
-    </footer>
+  <!-- carousel -->
+  <section class="slideshow-container">
 
-    <script src="./js/index.js"></script>
+    <div class="mySlides fade">
+      <img src="images/close-up-cook-delicious-1435910.jpg" style=" width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/background-basil-bread-1435903.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/cake-chocolate-chocolate-cake-132694.jpg" style="width:100%">
+    </div>
+    <div class="text fade">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </section>
+  <!-- CTA + button -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta_left">
+        <h3 class="left__header">Lorem ipsum dolor sit amet.</h3>
+        <p class="left__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis ratione iste
+          incidunt, sapiente voluptatem rem?</p>
+      </div>
+      <div class="cta_right">
+        <a href="app.html" class="cta__btn">Lorem ipsum</a>
+      </div>
+    </div>
+  </section>
+  <!-- features -->
+  <section id="features">
+    <div class="container">
+      <div class="feature">
+        <i class="fas fa-check"></i>
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate consequat quam, in auctor
+          sapien. Vestibulum sodales imperdiet ex, nec auctor enim porttitor nec. Pellentesque sed malesuada magna.
+        </div>
+      </div>
+      <div class="feature">
+        <i class="far fa-clock"></i>
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate consequat quam, in auctor
+          sapien. Vestibulum sodales imperdiet ex, nec auctor enim porttitor nec. Pellentesque sed malesuada magna.
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-bars"></i>
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate consequat quam, in auctor
+          sapien. Vestibulum sodales imperdiet ex, nec auctor enim porttitor nec. Pellentesque sed malesuada magna.
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div>
+        <h3>Lorem ipsum dolor sit amet</h3>
+      </div>
+      <div class="glue">
+        <input>
+        <button>Lorem</button>
+      </div>
+    </div>
+  </section>
+  <section class="container about-me">
+    <!-- about me -->
+    <div id="about">
+      <div class="pic">
+        <img src="images/beautiful-casual-cute-372042.jpg" style="width: 300px" style="height: 300px">
+      </div>
+      <div class="text">
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat.
+          Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus
+          arcu
+          condimentum sed.
+          <p>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <section id="stopka">
+    <div class="container">
+      <div class="box_1 box">
+        <h2> Lorem ipsum dolor</h2>
+        <p>
+          Lorem ipsum dolor
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit amet.
+        </p>
+      </div>
+      <div class="box_2 box">
+        <h2>Lerem ipsum dolor</h2>
+        <ul>
+          <li>consectetur adipiscing elit</li>
+          <li>sed do eiusmod tempor</li>
+          <li>incididunt ut labore</li>
+          <li>et dolore magna aliqua</li>
+        </ul>
+      </div>
+      <div class="box_3 box">
+        <h2>Lerem ipsum dolor</h2>
+        <form action="">
+          <input type="text">
+          <button>Lorem</button>
+        </form>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+  </section class="container">
+  <footer class="footer ">
+    <p>Copyright <span>Zaplanuj Jedzonko.pl</span></p>
+  </footer>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
