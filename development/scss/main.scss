@@ -4,7 +4,7 @@
 
 
 body {
-  background-color: #BADA55;
+  background-color: #EBEBEB;
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
@@ -55,6 +55,98 @@ header {
 }
 
 
+
+//Karuzela
+.slideshow-container {
+  // max-width: 1200px;
+  position: relative;
+  margin: auto;
+  align-items: center;
+  box-sizing: border-box;
+
+  .mySlides {
+    display: none;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  img {
+    vertical-align: middle;
+    // max-height: 600px;
+
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(250, 226, 226, 0.8);
+  }
+
+  .text {
+    font-size: 24px;
+    top: 40%;
+    left: 30%;
+    position: absolute;
+    color: black;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+
+    h2 {
+      padding: 0;
+      margin: 0;
+    }
+
+    p {
+      width: 600px;
+    }
+  }
+
+}
+
 //Features
 #features {
   background-color: #EBEBEB;
@@ -90,106 +182,23 @@ header {
   }
 
   .pic {
-    width: 300px;
-    height: 300px;
-    background: #4a4a49;
+    // width: 300px;
+    // height: 300px;
     margin: 5% 0;
     box-sizing: border-box;
   }
 
   .text {
-    align-items: center;
+    align-items: top;
     width: 60%;
     font-family: 'Open Sans', sans-serif;
     padding: 50px auto;
     margin: 50px auto;
+    font-size: 20px;
   }
 }
 
-.karuzela {
-  display: flex;
-  align-items: center;
-
-
-  .container {
-    height: 500px;
-    background-color: grey;
-  }
-
-  i {
-    font-size: 40px;
-    position: absolute;
-  }
-
-  &>i:first-child {
-    left: 14px;
-  }
-
-  &>i:last-child {
-    right: 14px;
-  }
-
-}
-
-// Karuzela #1_2
-.stopka {
-
-  background: grey;
-  font-size: 20px;
-
-  .box {
-    height: 300px;
-  }
-
-
-  >.container {
-    background: grey;
-    color: white;
-    padding-top: 50px;
-
-    .box_1 {
-
-      width: 300px;
-
-    }
-
-    .box_2 {
-      ul>li {
-
-        margin-left: -20px
-      }
-    }
-
-    .box_3 {
-
-      form {
-        display: flex;
-
-
-        input {
-          width: 200px;
-          font-size: 25px;
-        }
-
-        button {
-          background-color: darkorange;
-          font-size: 20px;
-          align-self: center;
-          border: none;
-          flex-direction: column;
-          padding: 5px;
-        }
-      }
-
-      i {
-        font-size: 35px;
-        color: white;
-        margin: 30px 30px 0 0;
-      }
-    }
-  }
-}
-
+//newsletter
 .newsletter {
   background-color: #4A4A49;
   padding: 10px 0;
@@ -222,6 +231,9 @@ header {
   }
 
 }
+
+
+//cta & button
 
 .cta {
   background: #4a4a49;
@@ -257,8 +269,63 @@ header {
 
 }
 
+//Stopka
 
-// Footer 
+#stopka {
+
+  background: grey;
+  font-size: 20px;
+
+  .box {
+    height: 300px;
+  }
+
+  >.container {
+    background: grey;
+    color: white;
+    padding-top: 50px;
+
+    .box_1 {
+      width: 300px;
+
+    }
+
+    .box_2 {
+      ul>li {
+        margin-left: -20px
+      }
+    }
+
+    .box_3 {
+
+      form {
+        display: flex;
+
+        input {
+          width: 200px;
+          font-size: 25px;
+        }
+
+        button {
+          background-color: darkorange;
+          font-size: 20px;
+          align-self: center;
+          border: none;
+          flex-direction: column;
+          padding: 5px;
+        }
+      }
+
+      i {
+        font-size: 35px;
+        color: white;
+        margin: 30px 30px 0 0;
+      }
+    }
+  }
+}
+
+// Copyright
 
 .footer {
   background-color: rgb(70, 70, 70);
@@ -269,7 +336,6 @@ header {
 
   p {
     font-size: 20px;
-
 
     span {
       color: darkorange
