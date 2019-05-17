@@ -16,7 +16,7 @@ form.addEventListener('submit', function(event){
     if(regex.test(inputName.value) && ((inputName.value).length < 10)){
         event.preventDefault();
         userName = inputName.value;
-        messageBox.style.display = 'none';
+        window.open('dashboard.html')
         localStorage.setItem('savedName', userName);
         userID.innerText = localStorage.savedName;
     }else{

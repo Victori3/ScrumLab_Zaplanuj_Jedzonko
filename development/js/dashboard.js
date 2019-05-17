@@ -8,7 +8,7 @@ icon.addEventListener("click", function () {
 //dodaj plan
 var plan = recipe.querySelector(".plan")
 plan.addEventListener("click", function () {
-    window.open("../schedules.html");
+    window.open("./app/add_schedule.html");
 });
 
 
