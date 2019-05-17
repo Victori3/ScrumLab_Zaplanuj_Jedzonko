@@ -1,8 +1,19 @@
+
+// validate user name
+
+var userID = document.querySelector('.user_name');
+if(localStorage.savedName != null){
+    userID.innerText = localStorage.savedName;
+} else {
+    userID.innerText = "Imie"
+}
+
+
 //dodaj przepis
 var recipe = document.querySelector(".important-info");
 var icon = recipe.querySelector(".recipe");
 icon.addEventListener("click", function () {
-    window.open("../recipes.html");
+    window.open("./app/add_recipe.html");
 });
 
 //dodaj plan

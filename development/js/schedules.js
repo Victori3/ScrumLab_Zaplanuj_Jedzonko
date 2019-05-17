@@ -1,3 +1,14 @@
+
+// validate user name
+
+var userID = document.querySelector('.user_name');
+if(localStorage.savedName != null){
+    userID.innerText = localStorage.savedName;
+} else {
+    userID.innerText = "Imie"
+}
+
+
 var table = document.querySelector('.table__data');
 var allSchedules = JSON.parse(localStorage.getItem('schedule'));
 
@@ -34,7 +45,9 @@ var removeBtns = document.querySelectorAll('.remove_btn');
 
 editBtns.forEach(function(el){
     el.addEventListener('click', function(){
-        window.open('../app/edit_schedule.html')
+        var indexSchedule = this.closest('tr').className;
+        window.open('./app/edit_schedule.html')
+        localStorage.setItem('currentSchedule', indexSchedule)
     })
 })
 

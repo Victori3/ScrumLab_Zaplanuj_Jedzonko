@@ -66,6 +66,18 @@ if(localStorage.getItem('schedule') === null){
 }
 
 
+// which schedule
+
+var currentSchedule = localStorage.getItem('currentSchedule')-1;
+
+// update info
+console.log(currentSchedule);
+
+scheduleName.value = JSON.parse(localStorage.getItem('schedule'))[currentSchedule].title;
+scheduleAbout.value = JSON.parse(localStorage.getItem('schedule'))[currentSchedule].description;
+scheduleWeek.value = JSON.parse(localStorage.getItem('schedule'))[currentSchedule].weekNumber;
+
+
 
 form.addEventListener('submit', function(event){
     event.preventDefault();
@@ -105,7 +117,7 @@ form.addEventListener('submit', function(event){
     allPlanns.push(newPlan)
     localStorage.setItem("schedule", JSON.stringify(allPlanns));
     form.reset();
-    alert('Dodałeś plan :)')
+    alert('Zaktualizowałeś plan :)')
 });
 
 

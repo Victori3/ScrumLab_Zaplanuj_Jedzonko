@@ -8,6 +8,9 @@ var form = document.querySelector('.message_form');
 
 //validate user name input
 
+if(localStorage.getItem('savedName') != 'null'){
+    window.open('dashboard.html')
+}
 
 
 //setting name and hide message
@@ -25,10 +28,3 @@ form.addEventListener('submit', function(event){
     }
     
 })
-
-
-
-
-
-
-console.log(localStorage);

@@ -1,0 +1,72 @@
+.recipes_header{
+    margin: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid lightgray;
+    .header__head{
+        text-transform: uppercase;
+        color: #F60;
+    }
+    a{
+        text-decoration: none;
+        color: green;
+        font-size: 36px;
+    }
+}
+
+.recipes_table{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 50px;
+    text-align: left;
+    thead{
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        border-top: 2px solid lightgray; 
+        text-transform: uppercase;
+        // padding: 0 35px;
+        .table__header{
+            th:nth-child(3){
+                width: 50%;
+            }
+        }
+    }
+    
+    .table__data{
+        width: 100%;
+        display: block;
+        max-height: 400px;
+        overflow-y: scroll;
+        font-weight: 300;
+        color: #A1A194;
+        tr{
+            font-size: 14px;
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            border-top: 2px solid lightgray; 
+            td{
+                padding: 5px;
+                vertical-align: text-top;
+            }
+            td:nth-child(3){
+                width: 50%;
+                overflow: scroll;
+                text-align: justify;
+            }
+            .edit_btn{
+                font-size: 14px;
+                border: none;
+                color: rgb(255, 176, 59);
+            }
+
+            .remove_btn{
+                font-size: 14px;
+                border: none;
+                color:  rgb(189, 73, 50);
+            }
+        }
+    }
+}

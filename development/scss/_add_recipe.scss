@@ -1,0 +1,145 @@
+.recipe_form{
+    text-align: left;
+    .recipe_header{
+        margin: 40px 50px 10px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid lightgray;
+        .header__head{
+            text-transform: uppercase;
+            color: #F60;
+        }
+        .recipe_btn{
+            background-color: #F60;
+            font-size: 16px;
+            color: #FFF;
+            font-family: 'Open Sans', sans-sertif;
+            border: none;
+        }
+    }
+
+    .input_form{
+        display: flex;
+        padding: 0 60px;
+        flex-basis: 100%;
+
+        .left_form{
+            font-weight: 300;
+            flex-basis: 200px;
+        }
+        .right_form{
+            flex-grow: 1;
+            
+            .about_input{
+                resize: none;
+                height: 60px;
+                margin-top: 10px;
+                border-color: lightgrey;
+            }
+            .name_input,
+            .about_input{
+                width: 100%;
+            }
+        }
+    }
+
+    .how_to{
+        display: flex;
+        flex-basis: 100%;
+        padding: 40px 60px;
+        justify-content: space-between;
+        .title_section{
+            border-bottom: 2px solid lightgray;
+        }
+        .user_input{
+            display: flex;
+            height: 120px;
+            button{
+                align-self: flex-start;
+                padding: 0;
+                border: none;
+                color: green;
+                font-size: 36px;
+            }
+
+            
+        }
+        .manual{
+            margin-right: 5px;
+            flex: 1;
+            
+            .manual_input{
+                height: 100px;
+                margin: 5px;
+                flex: 1;
+                resize: none;
+                border-color: lightgrey;
+            }
+            .manual_list_box{
+                height: 200px;
+
+                .manual__list{
+                    list-style: decimal inside;
+                    overflow: scroll;
+                    max-height: 100%;
+                    font-size: 14px;
+
+                    .edit_btn{
+                        font-size: 14px;
+                        padding: 0;
+                        margin: 0 5px;
+                        border: none;
+                        color: rgb(255, 176, 59);
+                    }
+        
+                    .remove_btn{
+                        font-size: 14px;
+                        padding: 0;
+                        border: none;
+                        color:  rgb(189, 73, 50);
+                    }
+                }
+            }
+        }
+        .ingredients{
+            margin-left: 5px;
+            flex: 1;
+            .ingredients_input{
+                height: 50px;
+                margin: 5px;
+                flex: 1;
+                resize: none;
+                border-color: lightgrey;
+            }
+            .ingredients_list_box{
+                height: 200px;
+
+                .ingredients__list{
+                    list-style: disc inside;
+                    overflow: scroll;
+                    max-height: 100%;
+                    font-size: 14px;
+
+                    .edit_btn{
+                        font-size: 14px;
+                        padding: 0;
+                        margin: 0 5px;
+                        border: none;
+                        color: rgb(255, 176, 59);
+                    }
+        
+                    .remove_btn{
+                        font-size: 14px;
+                        padding: 0;
+                        border: none;
+                        color:  rgb(189, 73, 50);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
