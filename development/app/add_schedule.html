@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zaplanuj Jedzonko</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo"><span style="color:white;">Zaplanuj </span><span style="color:#F60">Jedzonko</span> </h1>
+      <div class="user-info">
+        <p class="user_name">Imię</p>
+        <i class="far fa-user-circle"></i>
+      </div>
+    </header>
+    <div class="hero">
+      <nav class="nav">
+        <div class="nav_home nav_view">
+          <a href="app.html">Pulpit</a>
+        </div>
+        <div class="nav_recipes nav_view">
+          <a href="recipes.html">Przepisy</a>
+        </div>
+        <div class="nav_schedules nav_view">
+          <a href="schedules.html">Plany</a>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="content">
+        <form action="" class="schedule_form">
+            <div class="schedule_header">
+                <h3 class="header__head">Nowy plan</h3>
+                <button type="submit" class="schedule_btn">Zapisz i zamknij</button>
+            </div>
+            <div class="input_form">
+              <div class="left_form">
+                <label for="schedule_name" class="schedule_label" >Nazwa Planu</label><br>
+                <label for="schedule_about" class="schedule_label">Opis planu</label><br>
+                <label for="schedule_week" class="schedule_label">Numer tygodnia</label>
+              </div>
+              <div class="right_form">
+                <input type="text" id="schedule_name" class="schedule_name" name="schedule_name"><br>
+                <input type="textarea" id="schedule_about" class="schedule_about" name="schedule_about"><br>
+                <input type="number" id="schedule_week" class="schedule_week" min="1" max="52" name="schedule_week">
+              </div>
+            </div>
+            <table class="schedule_table">
+              <tr class="table_header">
+                <th></th>
+                <th>Śniadanie</th>
+                <th>Drugie<br>Śniadanie</th>
+                <th>Zupa</th>
+                <th>Drugie<br>Danie</th>
+                <th>Kolacja</th>
+              </tr>
+              <tr class="table_day">
+                <td>Poniedziałek</td>
+              </tr>
+              <tr class="table_day">
+                <td>Wtorek</td>
+              </tr>
+              <tr class="table_day">
+                <td>Środa</td>
+              </tr>
+              <tr class="table_day"> 
+                <td>Czwartek</td>
+              </tr>
+              <tr class="table_day">
+                <td>Piątek</td>
+              </tr>
+              <tr class="table_day">
+                <td>Sobota</td>
+              </tr>
+              <tr class="table_day">
+                <td>Niedziela</td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../js/add_schedule.js"></script>
+  </body>
+</html>

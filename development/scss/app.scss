@@ -2,6 +2,9 @@
 @import "../fonts/scss/fontawesome";
 @import "../fonts/scss/solid";
 
+//imports subsite
+@import "add_schedule";
+
 body{    
     font-weight: 400;
 }
@@ -60,7 +63,7 @@ body{
                     @extend .fas;
                     content: fa-content($fa-var-chevron-right);
                     position: absolute;
-                    left: 160px;
+                    left: 140px;
                     top: 50%;
                     transform: translateY(-50%);
                     color: #F60;
@@ -77,23 +80,21 @@ body{
         padding-left: 20px;
     }
 
-    >.content{
+    >.container{
         background: url('../images/image.png');
-        width: calc(100vw - 80px);
-        height: calc(100vh - 80px);
+        flex-basis: 100%;
     }
 }
 
 // Content //
 
-.content{
-    .message{
-        // display: none;
+.container{
+    .content{
         background: #FFFFFA;
         border: 1px dashed darkgray;
         margin: 35px 80px;
-        width: 1070px;
-        height: 630px;
+        height: calc(100% - 80px);
+        width: calc(100% - 120px);
         text-align: center;
         font-size: 24px;
         color: #5B605F;
@@ -133,4 +134,5 @@ body{
         }
     }
 }
+
 

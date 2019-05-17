@@ -1,0 +1,76 @@
+.schedule_form{
+    text-align: left;
+    padding: 35px;
+    max-width: 1200px;
+    .schedule_header{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid lightgrey;
+        padding-bottom: 4px;
+    }
+    .header__head{
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #F60
+    }
+    .schedule_btn{
+        background-color: #F60;
+        font-size: 16px;
+        color: #FFF;
+        font-family: 'Open Sans', sans-sertif;
+        border: none;
+    }
+    .input_form{
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        flex-basis: 100%;
+        .left_form{
+            font-weight: 300;
+            flex-basis: 200px;
+        }
+        .right_form{
+            flex-grow: 1;
+            input{
+                padding: 4px;
+            }
+            .schedule_name,
+            .schedule_about{
+                width: 100%;
+            }
+            .schedule_week{
+                width: 40px;
+            }
+            
+        }
+    }
+    
+    .schedule_table{
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        text-transform: uppercase;
+        tr{
+            border-bottom: 1px solid lightgray;
+        }
+        .table_header{
+            th{
+                padding: 4px;
+            }
+            @for $i from 2 through 6 {
+                th:nth-child(#{$i}){
+                    border-top: 1px solid lightgray;
+                }
+            }
+        }
+        .table_day{
+            td{
+                padding: 4px;
+            }
+            .select_btn{
+                font-size: 14px;
+                width: 150px;
+            }
+        }
+    }
+}
